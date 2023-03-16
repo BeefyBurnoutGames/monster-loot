@@ -7,6 +7,9 @@ module.exports = {
 				background: '#202124',
 				secondary: '#3C4043',
 			},
+			transitionDuration: {
+				0: '0ms',
+			},
 		},
 	},
 	plugins: [],
