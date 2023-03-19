@@ -20,7 +20,6 @@ export default function MonsterList() {
 				<MonsterCard />
 				<MonsterCard />
 				<MonsterCard />
-				<MonsterCard />
 			</div>
 		</div>
 	)
