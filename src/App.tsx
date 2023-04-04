@@ -1,8 +1,9 @@
-import { invoke } from '@tauri-apps/api/tauri'
-import { useState } from 'react'
+// import { invoke } from '@tauri-apps/api/tauri'
+// import { useState } from 'react'
 import { Route } from 'react-router'
 import { Routes, Navigate } from 'react-router-dom'
 import MonsterList from './screens/MonsterList'
+import BookList from './screens/BookList'
 
 function App() {
 	// const [greetMsg, setGreetMsg] = useState('')
@@ -16,7 +17,8 @@ function App() {
 	return (
 		<main className="h-screen w-screen bg-background text-gray-400">
 			<Routes>
-				<Route index element={<MonsterList />} />
+				<Route index element={<BookList />} />
+				<Route path="/book/:book_id" element={<MonsterList />} />
 				<Route path="*" element={<Navigate replace to="/" />} />
 			</Routes>
 		</main>
